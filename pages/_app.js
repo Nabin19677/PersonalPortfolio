@@ -1,4 +1,4 @@
-import Head from "next/head"; 
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -33,7 +33,7 @@ const SiteHead = ({ title }) => (
 
 const PageWrapper = ({ children, title }) => (
   <div className="container">
-    <SiteHead />
+    <SiteHead title={title} />
     <NavBar />
     <main className="main">{children}</main>
     <Footer />
@@ -42,7 +42,7 @@ const PageWrapper = ({ children, title }) => (
 
 function MyApp({ Component, pageProps }) {
   const { pathname } = useRouter();
-
+  console.log(pathname);
   const pathToTitle = {
     "/": "Anil Khadka - Full Stack Developer",
   };
