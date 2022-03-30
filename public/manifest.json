@@ -1,0 +1,17 @@
+{
+  "theme_color": "#90cdf4",
+  "background_color": "#252934",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Anil Khadka - Full Stack Developer",
+  "short_name": "Anil Khadka",
+  "description": "Anil Khadka's portfolio",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x289",
+      "type": "image/png"
+    }
+  ]
+}
