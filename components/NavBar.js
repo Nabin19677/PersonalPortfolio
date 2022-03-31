@@ -39,7 +39,7 @@ const NavButtons = () => {
   return (
     <Stack direction="row" spacing="8">
       {navBtns.map((btn) => (
-        <Button key={btn.label} size="md" variant="link">
+        <Button key={btn.label} size="sm" variant="unstyled">
           {btn.label}
         </Button>
       ))}
@@ -49,7 +49,7 @@ const NavButtons = () => {
 
 export default function NavBar() {
   return (
-    <HStack px="10" py="25">
+    <HStack px="4" py="4">
       <Logo />
       <Spacer />
       <NavButtons />

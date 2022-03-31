@@ -35,8 +35,8 @@ const PageWrapper = ({ children, title }) => (
   <div className="container">
     <SiteHead title={title} />
     <NavBar />
-    {/* <main className="main">{children}</main> */}
-    {/* <Footer /> */}
+    <main className="main">{children}</main>
+    <Footer />
   </div>
 );
 
