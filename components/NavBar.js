@@ -30,8 +30,7 @@ const navBtns = [
 const Logo = () => {
   return (
     <Box m="2" direction="row">
-      <img alt="" height="60" width="60" src="/logo.png" />
-      <Heading> ANIL KHADKA </Heading>
+      <img alt="" height="80" width="80" src="/logo.png" />
     </Box>
   );
 };
