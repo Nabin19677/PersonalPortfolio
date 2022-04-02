@@ -18,6 +18,10 @@ export default function About() {
       </Center>
       <Box px="8" py="16">
         <HStack>
+          <Box boxSize="sm">
+            <Image src="/coding.png" alt="Coding Pic" />
+          </Box>
+          <Spacer />
           <Container>
             <Text fontSize="lg">
               Hi, I&apos;m Anil! I am a full stack developer that studied
@@ -25,10 +29,6 @@ export default function About() {
               Bedfordshire.
             </Text>
           </Container>
-          <Spacer />
-          <Box boxSize="sm">
-            <Image src="https://bit.ly/dan-abramov" alt="Anil Khadka Pic" />
-          </Box>
         </HStack>
       </Box>
     </Box>

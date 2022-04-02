@@ -16,8 +16,9 @@ export default function Home() {
     <div>
       <Landing />
       <About />
-      {/*<Skills />
       <Experience />
+      {/*
+      <Skills/>
       <Projects />
       <Contact /> */}
     </div>
