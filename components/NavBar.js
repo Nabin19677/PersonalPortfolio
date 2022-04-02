@@ -49,7 +49,7 @@ const NavButtons = () => {
 
 export default function NavBar() {
   return (
-    <HStack px="4" py="2" background="#DFE8F5">
+    <HStack px="4" py="2">
       <Logo />
       <Spacer />
       <NavButtons />

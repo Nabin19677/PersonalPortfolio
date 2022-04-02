@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <div>
       <Landing />
-      {/* <About />
-      <Skills />
+      <About />
+      {/*<Skills />
       <Experience />
       <Projects />
       <Contact /> */}

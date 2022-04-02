@@ -9,13 +9,11 @@ import {
 
 export default function Landing() {
   return (
-    <Container h="80vh" centerContent>
-      <Center>
-        <Box>
-          <Heading>Hello, I&apos;m Anil Khadka</Heading>
-          <Heading>a Full Stack Developer.</Heading>
-        </Box>
-      </Center>
-    </Container>
+    <Center h="85vh" background="#DFE8F5">
+      <Box>
+        <Heading>Hello, I&apos;m Anil Khadka</Heading>
+        <Heading>a Full Stack Developer.</Heading>
+      </Box>
+    </Center>
   );
 }
