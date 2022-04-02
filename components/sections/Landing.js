@@ -1,12 +1,21 @@
-import { Box, Center, Heading, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Heading,
+  Stack,
+  VStack,
+  Container,
+} from "@chakra-ui/react";
 
 export default function Landing() {
   return (
-    <Center h="35vw">
-      <Box>
-        <Heading>Hello, I'm Anil Khadka</Heading>
-        <Heading>a Full Stack Developer.</Heading>
-      </Box>
-    </Center>
+    <Container h="80vh" centerContent>
+      <Center>
+        <Box>
+          <Heading>Hello, I&apos;m Anil Khadka</Heading>
+          <Heading>a Full Stack Developer.</Heading>
+        </Box>
+      </Center>
+    </Container>
   );
 }
