@@ -11,7 +11,7 @@ import {
 
 export default function Experience() {
   return (
-    <Box p="16">
+    <Box p="16" id="experience">
       <Center>
         <Heading>Experience</Heading>
       </Center>

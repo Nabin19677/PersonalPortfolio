@@ -12,11 +12,11 @@ import { Fragment } from "react";
 
 export default function About() {
   return (
-    <Box p="16">
+    <Box p="16" id="about">
       <Center>
         <Heading>About Me</Heading>
       </Center>
-      <Box px="8" py="16">
+      <Box px="20" py="16">
         <HStack>
           <Box boxSize="sm">
             <Image src="/coding.png" alt="Coding Pic" />

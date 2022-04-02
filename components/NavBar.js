@@ -8,6 +8,8 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import { animateScroll as scroll, Link as ScrollLink } from "react-scroll";
+import Sticky from "react-stickynode";
 
 const navBtns = [
   {
@@ -30,7 +32,13 @@ const navBtns = [
 const Logo = () => {
   return (
     <Box m="2" direction="row">
-      <img alt="" height="80" width="80" src="/logo.png" />
+      <img
+        alt=""
+        height="80"
+        width="80"
+        src="/logo.png"
+        onClick={scroll.scrollToTop}
+      />
     </Box>
   );
 };
@@ -40,7 +48,15 @@ const NavButtons = () => {
     <Stack direction="row" spacing="8">
       {navBtns.map((btn) => (
         <Button key={btn.label} size="sm" variant="unstyled">
-          {btn.label}
+          <ScrollLink
+            to={btn.label.toLowerCase()}
+            spy
+            smooth
+            offset={-70}
+            duration={500}
+          >
+            {btn.label}
+          </ScrollLink>
         </Button>
       ))}
     </Stack>
@@ -49,10 +65,12 @@ const NavButtons = () => {
 
 export default function NavBar() {
   return (
-    <HStack px="4" py="2">
-      <Logo />
-      <Spacer />
-      <NavButtons />
-    </HStack>
+    <Sticky>
+      <HStack px="4" py="2" bg="white">
+        <Logo />
+        <Spacer />
+        <NavButtons />
+      </HStack>
+    </Sticky>
   );
 }
