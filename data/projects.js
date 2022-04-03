@@ -22,7 +22,7 @@ const projects = [
   },
   {
     imageUrl:
-      "https://ik.imagekit.io/2uhonvl8q/Screenshot_2022-04-03_184830_22nJJqwyO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648991108781",
+      "https://ik.imagekit.io/2uhonvl8q/Screenshot_2022-04-03_191022_jN7yxM_Tk.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648992339043",
     title: "HR Hunt Branch Management Application",
     description: "HR Hunt ",
     keyPoints: [],
