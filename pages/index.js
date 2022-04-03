@@ -10,7 +10,9 @@ import Experience from "../components/sections/Experience";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
+//css
 import styles from "../styles/Home.module.css";
 
 const BoxWrapper = ({ children }) => {
@@ -37,6 +39,7 @@ export default function Home() {
       <BoxWrapper>
         <Contact />
       </BoxWrapper>
+      <Footer />
     </Box>
   );
 }

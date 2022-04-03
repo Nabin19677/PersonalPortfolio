@@ -77,20 +77,24 @@ const skills = [
 export default function Skills() {
   return (
     <Box id="skills">
-      <Center>
-        <Heading>My Skills</Heading>
-      </Center>
-      <Grid templateColumns="repeat(5,1fr)" gap={6} p={10}>
-        {skills.map((skill) => (
-          <GridItem key={skill.iconName}>
-            <SkillCard
-              iconName={skill.iconName}
-              title={skill.title}
-              iconModule={skill.iconModule}
-            />
-          </GridItem>
-        ))}
-      </Grid>
+      <Box>
+        <Center>
+          <Heading>My Skills</Heading>
+        </Center>
+      </Box>
+      <Box mt={70}>
+        <Grid templateColumns="repeat(5,1fr)" gap={6}>
+          {skills.map((skill) => (
+            <GridItem key={skill.iconName}>
+              <SkillCard
+                iconName={skill.iconName}
+                title={skill.title}
+                iconModule={skill.iconModule}
+              />
+            </GridItem>
+          ))}
+        </Grid>
+      </Box>
     </Box>
   );
 }

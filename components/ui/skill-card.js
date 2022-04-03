@@ -3,12 +3,12 @@ import { Box, Heading, HStack, Icon, Image, Text } from "@chakra-ui/react";
 export default function SkillCard({ iconModule, iconName, title }) {
   return (
     <Box>
-      <HStack>
+      <HStack spacing={4}>
         <Box>
-          <Icon as={iconModule} />
+          <Icon boxSize="3em" as={iconModule} />
         </Box>
         <Box>
-          <Text size="md">{title}</Text>
+          <Text fontSize="lg">{title}</Text>
         </Box>
       </HStack>
     </Box>
