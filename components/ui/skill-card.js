@@ -1,14 +1,14 @@
-import { Box, Heading, HStack, Image } from "@chakra-ui/react";
+import { Box, Heading, HStack, Icon, Image, Text } from "@chakra-ui/react";
 
-export default function SkillCard({ iconName, title }) {
+export default function SkillCard({ iconModule, iconName, title }) {
   return (
     <Box>
       <HStack>
         <Box>
-          <Image src={`/techico/${iconName}.svg`} />
+          <Icon as={iconModule} />
         </Box>
         <Box>
-          <Heading size="md">{title}</Heading>
+          <Text size="md">{title}</Text>
         </Box>
       </HStack>
     </Box>
