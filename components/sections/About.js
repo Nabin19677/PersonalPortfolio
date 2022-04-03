@@ -31,7 +31,10 @@ export default function About() {
               Bedfordshire.
             </Text>
             <Box mt="10">
-              <Link href="/resume.pdf" isExternal>
+              <Link
+                href="https://drive.google.com/file/d/13p3VUyKMd3eC5mwQqX-RGgCcsLOitWrl/view?usp=sharing"
+                isExternal
+              >
                 <Button> RESUME</Button>
               </Link>
             </Box>
