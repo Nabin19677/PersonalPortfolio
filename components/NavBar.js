@@ -65,7 +65,7 @@ const NavButtons = () => {
 
 export default function NavBar() {
   return (
-    <Sticky>
+    <Sticky enabled innerZ={99}>
       <HStack px="4" py="2" bg="white">
         <Logo />
         <Spacer />
