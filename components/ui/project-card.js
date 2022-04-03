@@ -48,9 +48,9 @@ const Project = ({ alternate, ...props }) => {
     );
   }
   return (
-    <Box m="auto" p="auto">
+    <Box>
       <Image
-        boxSize="60vh"
+        boxSize="55vh"
         objectFit="cover"
         objectPosition="center top"
         src={props.imageUrl}
@@ -65,9 +65,9 @@ export default function ProjectCard({ project, index }) {
       <Stack
         direction={["column", "row"]}
         justifyContent="center"
+        spacing="5vw"
       >
         <Project alternate={index % 2 == 0 ? true : false} {...project} />
-        <Spacer/>
         <Project alternate={index % 2 == 0 ? false : true} {...project} />
       </Stack>
     </Box>
