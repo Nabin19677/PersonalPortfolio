@@ -8,8 +8,12 @@ import {
   Text,
   Badge,
   Button,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 const experiences = [
   {
@@ -59,11 +63,14 @@ export default function Experience() {
                     {experiences[experienceIndex].company}
                   </Heading>
                   <Text>{experiences[experienceIndex].date}</Text>
-                  <Container>
+                  <List spacing={2}>
                     {experiences[experienceIndex].points.map((p, i) => (
-                      <Text key={i}>{p}</Text>
+                      <ListItem key={i}>
+                        <ListIcon as={FaAngleDoubleRight} />
+                        {p}
+                      </ListItem>
                     ))}
-                  </Container>
+                  </List>
                 </Container>
               </Box>
             </HStack>

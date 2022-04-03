@@ -2,16 +2,16 @@ import {
   Box,
   Button,
   Center,
-  Container,
   Heading,
   HStack,
-  Divider,
   Spacer,
   Stack,
   FormControl,
   FormLabel,
   Input,
   Textarea,
+  Text,
+  Container,
 } from "@chakra-ui/react";
 
 export default function Contact() {
@@ -22,7 +22,14 @@ export default function Contact() {
       </Center>
       <HStack mt="35">
         <Box>
-          <Heading size="md">Let&apos;s Work!</Heading>
+          <Container>
+            <Heading size="md">Let&apos;s Work!</Heading>
+            <Text>
+              I am always ready to consider your proposal. You just need to
+              write to me. If you are not comfortable doing this through a
+              website, then here are the networks that can help you.
+            </Text>
+          </Container>
         </Box>
         <Spacer />
         <Box w="40vw">
