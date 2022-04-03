@@ -17,15 +17,11 @@ export default function Projects() {
         <Heading>Featured Projects</Heading>
       </Center>
 
-      <Flex pt={12}>
-        <Grid container direction="column" justify="center">
-          {projects.map((proj, i) => {
-            return <ProjectCard key={proj.title} index={i} project={proj} />;
-          })}
-        </Grid>
-      </Flex>
+      {projects.map((proj, i) => {
+        return <ProjectCard key={proj.title} index={i} project={proj} />;
+      })}
 
-      <Box my={10}>
+      <Box my={35}>
         <Center>
           <Link href="/projects">
             <Button>VIEW ALL</Button>
