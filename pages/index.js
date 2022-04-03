@@ -35,9 +35,9 @@ export default function Home() {
       <BoxWrapper>
         <Projects />
       </BoxWrapper>
-
-      {/*
-      <Contact /> */}
+      <BoxWrapper>
+        <Contact />
+      </BoxWrapper>
     </Box>
   );
 }

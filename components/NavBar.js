@@ -6,6 +6,7 @@ import {
   Stack,
   VStack,
   Heading,
+  Badge,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { animateScroll as scroll, Link as ScrollLink } from "react-scroll";
@@ -71,6 +72,7 @@ export default function NavBar() {
         <Spacer />
         <NavButtons />
       </HStack>
+      <Badge>Under Development</Badge>
     </Sticky>
   );
 }
