@@ -4,10 +4,6 @@ import { useRouter } from "next/router";
 import { ChakraProvider } from "@chakra-ui/react";
 import "../styles/globals.css";
 
-//Components
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-
 const SiteHead = ({ title }) => (
   <Head>
     <title>{title}</title>
@@ -34,9 +30,7 @@ const SiteHead = ({ title }) => (
 const PageWrapper = ({ children, title }) => (
   <div className="container">
     <SiteHead title={title} />
-    <NavBar />
     <main className="main">{children}</main>
-    <Footer />
   </div>
 );
 
