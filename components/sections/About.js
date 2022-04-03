@@ -7,6 +7,8 @@ import {
   Text,
   Image,
   Spacer,
+  Button,
+  Link,
 } from "@chakra-ui/react";
 import { Fragment } from "react";
 
@@ -28,6 +30,11 @@ export default function About() {
               computer science and software engineering at the University of
               Bedfordshire.
             </Text>
+            <Box mt="10">
+              <Link href="/resume.pdf" isExternal>
+                <Button> RESUME</Button>
+              </Link>
+            </Box>
           </Container>
         </HStack>
       </Box>
