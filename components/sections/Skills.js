@@ -5,6 +5,8 @@ import {
   Grid,
   GridItem,
   Heading,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import SkillCard from "../ui/skill-card";
 
@@ -20,7 +22,8 @@ import {
   SiMongodb,
   SiPostgresql,
 } from "react-icons/si";
-
+// import skills from "../../data/skills";
+// import iconMapper from
 const skills = [
   {
     iconName: "javascript",
@@ -83,17 +86,17 @@ export default function Skills() {
         </Center>
       </Box>
       <Box mt={70}>
-        <Grid templateColumns="repeat(5,1fr)" gap={8}>
+        <Wrap spacing="4vw">
           {skills.map((skill) => (
-            <GridItem key={skill.iconName}>
+            <WrapItem key={skill.iconName}>
               <SkillCard
                 iconName={skill.iconName}
                 title={skill.title}
                 iconModule={skill.iconModule}
               />
-            </GridItem>
+            </WrapItem>
           ))}
-        </Grid>
+        </Wrap>
       </Box>
     </Box>
   );

@@ -22,9 +22,10 @@ const projects = [
   },
   {
     imageUrl:
-      "https://ik.imagekit.io/2uhonvl8q/Screenshot_2022-04-03_191022_jN7yxM_Tk.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648992339043",
+      "https://ik.imagekit.io/2uhonvl8q/Screenshot_2022-04-03_191943_JIYCjj1tE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648992905305",
     title: "HR Hunt Branch Management Application",
-    description: "HR Hunt ",
+    description:
+      "HR Hunt is recruitment service. They specialize in the field of training and hiring across all industry in Nepal.",
     keyPoints: [],
     technologies: ["Angular", "Node.js", "Express", "MongoDB"],
     links: [

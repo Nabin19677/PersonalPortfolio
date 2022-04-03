@@ -5,7 +5,7 @@ export default function SkillCard({ iconModule, iconName, title }) {
     <Box>
       <HStack spacing={4}>
         <Box>
-          <Icon boxSize="3em" as={iconModule} />
+          <Icon boxSize="4em" as={iconModule} />
         </Box>
         <Box>
           <Text fontSize="lg">{title}</Text>
