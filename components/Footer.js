@@ -15,19 +15,3 @@ export default function Footer() {
     </Box>
   );
 }
-
-{
-  /* <Box p={4}>
-<Container>
-  <Center>
-    <Text as="cite">
-      Made with{" "}
-      <span aria-label="heart" role="img">
-        &#128153;
-      </span>{" "}
-    </Text>
-    by <Text as="kbd"> Anil Khadka</Text>
-  </Center>
-</Container>
-</Box> */
-}

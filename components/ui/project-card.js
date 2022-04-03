@@ -7,16 +7,11 @@ import {
   HStack,
   Spacer,
   Container,
+  VStack,
 } from "@chakra-ui/react";
 import SocialIcon from "../ui/social-icon";
-
-import { FaLink } from "react-icons/fa";
-import { SiGithub } from "react-icons/si";
-
-const iconMap = {
-  github: SiGithub,
-  website: FaLink,
-};
+import Technologies from "./technologies";
+import iconMapper from "../../utils/icon-mapper.js";
 
 const Card = ({ title, description, keyPoints, technologies, links }) => (
   <Box borderRadius={5} bg="tomato" p="4">
@@ -28,7 +23,11 @@ const Card = ({ title, description, keyPoints, technologies, links }) => (
       <HStack>
         <Spacer />
         {links.map((l) => (
-          <SocialIcon key={l.title} link={l.url} iconModule={iconMap[l.icon]} />
+          <SocialIcon
+            key={l.title}
+            link={l.url}
+            iconModule={iconMapper[l.icon]}
+          />
         ))}
       </HStack>
     </Box>
@@ -37,7 +36,15 @@ const Card = ({ title, description, keyPoints, technologies, links }) => (
 
 const Project = ({ alternate, ...props }) => {
   if (alternate) {
-    return <Card {...props} />;
+    return (
+      <>
+        <VStack>
+          <Card {...props} />
+
+          <Technologies techs={props.technologies} />
+        </VStack>
+      </>
+    );
   }
   return (
     <Box m="auto" p="auto">

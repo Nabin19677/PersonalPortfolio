@@ -15,13 +15,8 @@ import {
 } from "@chakra-ui/react";
 import SocialIcon from "../ui/social-icon";
 
-import { SiGithub, SiLinkedin, SiCodewars } from "react-icons/si";
 import socialLinks from "../../data/social_links";
-const socialIcons = {
-  github: SiGithub,
-  linkedin: SiLinkedin,
-  codewars: SiCodewars,
-};
+import iconMapper from "../../utils/icon-mapper";
 
 export default function Contact() {
   return (
@@ -43,7 +38,7 @@ export default function Contact() {
                 {socialLinks.map((soc) => (
                   <SocialIcon
                     key={soc.icon}
-                    iconModule={socialIcons[soc.icon]}
+                    iconModule={iconMapper[soc.icon]}
                     link={soc.link}
                   />
                 ))}
