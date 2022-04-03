@@ -13,6 +13,15 @@ import {
   Text,
   Container,
 } from "@chakra-ui/react";
+import SocialIcon from "../ui/social-icon";
+
+import { SiGithub, SiLinkedin, SiCodewars } from "react-icons/si";
+import socialLinks from "../../data/social_links";
+const socialIcons = {
+  github: SiGithub,
+  linkedin: SiLinkedin,
+  codewars: SiCodewars,
+};
 
 export default function Contact() {
   return (
@@ -24,11 +33,22 @@ export default function Contact() {
         <Box>
           <Container>
             <Heading size="md">Let&apos;s Work!</Heading>
-            <Text>
+            <Text mt={4}>
               I am always ready to consider your proposal. You just need to
               write to me. If you are not comfortable doing this through a
               website, then here are the networks that can help you.
             </Text>
+            <Box mt={4}>
+              <HStack>
+                {socialLinks.map((soc) => (
+                  <SocialIcon
+                    key={soc.icon}
+                    iconModule={socialIcons[soc.icon]}
+                    link={soc.link}
+                  />
+                ))}
+              </HStack>
+            </Box>
           </Container>
         </Box>
         <Spacer />
