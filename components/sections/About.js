@@ -12,7 +12,7 @@ import { Fragment } from "react";
 
 export default function About() {
   return (
-    <Box p="16" id="about">
+    <Box id="about">
       <Center>
         <Heading>About Me</Heading>
       </Center>

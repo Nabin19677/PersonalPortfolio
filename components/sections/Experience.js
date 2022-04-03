@@ -15,6 +15,7 @@ const experiences = [
   {
     jobTitle: "MEAN Stack Developer",
     company: "Chaitanya Design",
+    date: "Apr 2019 - Mar 2020",
     points: [
       "Development of Single Page Web Application using Angular 2+.",
       "Develop REST API Endpoints / Backend Development with Nodejs and MongoDB Database.",
@@ -32,7 +33,7 @@ export default function Experience() {
   };
 
   return (
-    <Box p="16" id="experience">
+    <Box id="experience">
       <Center>
         <Heading>Experience</Heading>
       </Center>
@@ -57,6 +58,7 @@ export default function Experience() {
                     {experiences[experienceIndex].jobTitle} @{" "}
                     {experiences[experienceIndex].company}
                   </Heading>
+                  <Text>{experiences[experienceIndex].date}</Text>
                   <Container>
                     {experiences[experienceIndex].points.map((p, i) => (
                       <Text key={i}>{p}</Text>

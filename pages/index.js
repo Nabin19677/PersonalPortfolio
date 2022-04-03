@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Box } from "@chakra-ui/react";
 
 //Components
 import Landing from "../components/sections/Landing";
@@ -11,15 +12,25 @@ import Contact from "../components/sections/Contact";
 
 import styles from "../styles/Home.module.css";
 
+const BoxWrapper = ({ children }) => {
+  return <Box p="16">{children}</Box>;
+};
+
 export default function Home() {
   return (
     <div>
       <Landing />
-      <About />
-      <Experience />
-      {/*
-      <Skills/>
-      <Projects />
+      <BoxWrapper>
+        <About />
+      </BoxWrapper>
+      <BoxWrapper>
+        <Experience />
+      </BoxWrapper>
+      <BoxWrapper>
+        <Skills />
+      </BoxWrapper>
+
+      {/*<Projects />
       <Contact /> */}
     </div>
   );

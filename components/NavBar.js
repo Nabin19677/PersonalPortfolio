@@ -52,7 +52,7 @@ const NavButtons = () => {
             to={btn.label.toLowerCase()}
             spy
             smooth
-            offset={-70}
+            offset={-150}
             duration={500}
           >
             {btn.label}
