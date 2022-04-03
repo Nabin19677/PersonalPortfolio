@@ -47,16 +47,7 @@ const Project = ({ alternate, ...props }) => {
       </>
     );
   }
-  return (
-    <Box>
-      <Image
-        boxSize="55vh"
-        objectFit="cover"
-        objectPosition="center top"
-        src={props.imageUrl}
-      />
-    </Box>
-  );
+  return <Image m="auto" w="50vw" p="auto" src={props.imageUrl} />;
 };
 
 export default function ProjectCard({ project, index }) {
