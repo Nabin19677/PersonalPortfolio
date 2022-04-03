@@ -25,7 +25,7 @@ const socialIcons = {
 
 export default function Contact() {
   return (
-    <Box>
+    <Box id="contact">
       <Center>
         <Heading>Contact Me</Heading>
       </Center>

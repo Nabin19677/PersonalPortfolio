@@ -83,7 +83,7 @@ export default function Skills() {
         </Center>
       </Box>
       <Box mt={70}>
-        <Grid templateColumns="repeat(5,1fr)" gap={6}>
+        <Grid templateColumns="repeat(5,1fr)" gap={8}>
           {skills.map((skill) => (
             <GridItem key={skill.iconName}>
               <SkillCard

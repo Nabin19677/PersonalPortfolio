@@ -35,8 +35,8 @@ const Logo = () => {
     <Box m="2" direction="row">
       <img
         alt=""
-        height="80"
-        width="80"
+        height="70"
+        width="70"
         src="/logo.png"
         onClick={scroll.scrollToTop}
       />
@@ -68,12 +68,12 @@ export default function NavBar() {
   return (
     <Sticky enabled innerZ={99}>
       <Box bg="white">
-        <HStack px="4" py="2">
+        <HStack px="16" py="1">
           <Logo />
           <Spacer />
           <NavButtons />
         </HStack>
-        <Badge>Under Development</Badge>
+        {/* <Badge>Under Development</Badge> */}
       </Box>
     </Sticky>
   );

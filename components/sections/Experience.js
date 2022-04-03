@@ -11,6 +11,7 @@ import {
   List,
   ListItem,
   ListIcon,
+  Spacer,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
@@ -56,6 +57,7 @@ export default function Experience() {
                   </Button>
                 ))}
               </VStack>
+              <Spacer />
               <Box>
                 <Container>
                   <Heading>
