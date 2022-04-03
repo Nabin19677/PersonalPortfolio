@@ -8,13 +8,14 @@ import {
   Spacer,
   Container,
   VStack,
+  Stack,
 } from "@chakra-ui/react";
 import SocialIcon from "../ui/social-icon";
 import Technologies from "./technologies";
 import iconMapper from "../../utils/icon-mapper.js";
 
 const Card = ({ title, description, keyPoints, technologies, links }) => (
-  <Box borderRadius={5} bg="tomato" p="4">
+  <Box borderRadius={5} bg="tomato" p="4" textAlign="start">
     <Container>
       <Heading>{title}</Heading>
       <Text>{description}</Text>
@@ -61,22 +62,14 @@ const Project = ({ alternate, ...props }) => {
 export default function ProjectCard({ project, index }) {
   return (
     <Box my={20}>
-      <HStack>
+      <Stack
+        direction={["column", "row"]}
+        justifyContent="center"
+      >
         <Project alternate={index % 2 == 0 ? true : false} {...project} />
-        <Spacer />
+        <Spacer/>
         <Project alternate={index % 2 == 0 ? false : true} {...project} />
-      </HStack>
+      </Stack>
     </Box>
   );
-}
-
-{
-  /* <Grid container direction="row" style={{ height: "70vh" }}>
-<Grid container item xs={12} sm={6}>
-  
-</Grid>
-<Grid container item xs={12} sm={6}>
-  <Project alternate={index % 2 == 0 ? false : true} {...project} />
-</Grid>
-</Grid> */
 }

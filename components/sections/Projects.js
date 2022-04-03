@@ -21,7 +21,7 @@ export default function Projects() {
         return <ProjectCard key={proj.title} index={i} project={proj} />;
       })}
 
-      <Box my={35}>
+      <Box mt={35}>
         <Center>
           <Link href="/projects">
             <Button>VIEW ALL</Button>
