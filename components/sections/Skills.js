@@ -34,6 +34,14 @@ export default function Skills() {
         </Center>
       </Box>
       <Box mt={70}>
+        <Center>
+          <img
+            src="https://www.codewars.com/users/Nabin19677/badges/micro"
+            title="Codewars"
+          />
+        </Center>
+      </Box>
+      <Box mt={70}>
         <Wrap spacing="4vw">
           {skills.map((skill) => (
             <WrapItem key={skill.iconName}>
@@ -45,12 +53,6 @@ export default function Skills() {
             </WrapItem>
           ))}
         </Wrap>
-      </Box>
-      <Box>
-        <iframe
-          src="https://www.codewars.com/users/Nabin19677/badges/large"
-          title="Codewars"
-        ></iframe>
       </Box>
     </Box>
   );
