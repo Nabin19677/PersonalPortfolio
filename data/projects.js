@@ -9,6 +9,7 @@
 
 const projects = [
   {
+    id: 1,
     imageUrl:
       "https://ik.imagekit.io/2uhonvl8q/Screenshot_2022-04-03_185731_PcNtRwQHT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648991580076",
     title: "Grace International",
@@ -21,6 +22,7 @@ const projects = [
     ],
   },
   {
+    id: 2,
     imageUrl:
       "https://ik.imagekit.io/2uhonvl8q/Screenshot_2022-04-03_191943_JIYCjj1tE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648992905305",
     title: "HR Hunt Branch Management Application",
