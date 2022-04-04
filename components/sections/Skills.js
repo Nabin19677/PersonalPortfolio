@@ -5,23 +5,13 @@ import {
   Grid,
   GridItem,
   Heading,
+  Spacer,
   Wrap,
+  HStack,
   WrapItem,
 } from "@chakra-ui/react";
 import SkillCard from "../ui/skill-card";
 
-import {
-  SiJavascript,
-  SiNodedotjs,
-  SiPython,
-  SiAngular,
-  SiReact,
-  SiHtml5,
-  SiCss3,
-  SiTypescript,
-  SiMongodb,
-  SiPostgresql,
-} from "react-icons/si";
 import skills from "../../data/skills";
 import iconMapper from "../../utils/icon-mapper";
 
@@ -33,15 +23,16 @@ export default function Skills() {
           <Heading>My Skills</Heading>
         </Center>
       </Box>
-      <Box mt={70}>
-        <Center>
+      <Box>
+        <HStack>
+          <Spacer />
           <img
             src="https://www.codewars.com/users/Nabin19677/badges/micro"
             title="Codewars"
           />
-        </Center>
+        </HStack>
       </Box>
-      <Box mt={70}>
+      <Box mt={50}>
         <Wrap spacing="4vw">
           {skills.map((skill) => (
             <WrapItem key={skill.iconName}>
