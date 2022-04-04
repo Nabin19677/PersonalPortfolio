@@ -46,6 +46,12 @@ export default function Skills() {
           ))}
         </Wrap>
       </Box>
+      <Box>
+        <iframe
+          src="https://www.codewars.com/users/Nabin19677/badges/large"
+          title="Codewars"
+        ></iframe>
+      </Box>
     </Box>
   );
 }
