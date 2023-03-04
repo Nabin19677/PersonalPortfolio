@@ -32,7 +32,7 @@ export default function About() {
             </Text>
             <Box mt="10">
               <Link
-                href="https://drive.google.com/file/d/13p3VUyKMd3eC5mwQqX-RGgCcsLOitWrl/view?usp=sharing"
+                href="https://drive.google.com/file/d/1XpCxtfuZPjRb4fDgrG_iA_JVNxb7SkHr/view?usp=share_link"
                 isExternal
               >
                 <Button> RESUME</Button>
